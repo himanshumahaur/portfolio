@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* extras */
+.left-nav img {
+    padding-bottom: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.about img {
+    width: 50%;
+}
+
+.verti {
+    writing-mode: vertical-lr;
+}
+
+.code, .btn {
+    font-family: 'Fira Code';
+}
+
+h1, h2 {
+    font-family: 'Open Sans';
+}
+
+p, li {
+    font-family: 'Open Sans';
+    font-weight: lighter;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.line {
+    width: 10px;
+    height: 100px;
+    background-color: black;
+}
+
+/* top-nav */
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+    margin: 10px;
+
+    border-bottom: 1px solid black;
+}
+
+.top-nav * {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-nav .options li {
+    margin-left: 20px;
+}
+
+/* side-navs */
+.left-nav, .right-nav {
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: end;
+
+    width: 64px;
+    height: 100%;
+
+    border: 2px solid black;
+}
+.left-nav {
+    left: 0;
+}
+.right-nav {
+    right: 0;
+}
+
+/* main */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+    margin: 0 100px;
+}
+
+.main > * {
+    margin-bottom: 100px;
+}
+
+
