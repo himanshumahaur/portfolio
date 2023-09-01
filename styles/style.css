@@ -5,12 +5,30 @@
     padding: 0;
 }
 
-/* extras */
-.left-nav img {
-    padding-bottom: 20px;
-    width: 50px;
-    height: 50px;
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+h1, h2, p, li {
+    font-family: 'Open Sans';
 }
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p, li {
+    font-size: 1rem;
+}
+
+/*********************
+MIXED
+*********************/
 
 .about img {
     width: 50%;
@@ -24,32 +42,19 @@
     font-family: 'Fira Code';
 }
 
-h1, h2 {
-    font-family: 'Open Sans';
-}
-
-p, li {
-    font-family: 'Open Sans';
-    font-weight: lighter;
-}
-
 .btn {
-    margin: 10px;
-    padding: 10px;
+    width: fit-content;
+    padding: 12px;
     border: 2px solid black;
     border-radius: 6px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 50px;
     height: 50px;
 
+    border: 2px solid black;
     border-radius: 50%;
-    background-color: grey;
 }
 
 .line {
@@ -58,7 +63,12 @@ p, li {
     background-color: black;
 }
 
+/*********************
+NAV-BARS
+*********************/
+
 /* top-nav */
+
 .top-nav {
     display: flex;
     align-items: center;
@@ -91,19 +101,33 @@ p, li {
     align-items: center;
     justify-content: end;
 
-    width: 64px;
+    width: 128px;
     height: 100%;
 
     border: 2px solid black;
 }
+
 .left-nav {
     left: 0;
 }
+.left-nav img {
+    padding-bottom: 20px;
+    width: 32px;
+    height: 32px;
+}
+
 .right-nav {
     right: 0;
 }
+.right-nav .verti {
+    padding-bottom: 20px;
+}
 
-/* main */
+
+/*********************
+MAIN
+*********************/
+
 .main {
     display: flex;
     align-items: center;
@@ -112,11 +136,41 @@ p, li {
     flex-wrap: wrap;
     flex-basis: 100%;
 
-    margin: 0 100px;
+    margin: 0 128px;
 }
 
-.main > * {
-    margin-bottom: 100px;
+.main > div {
+    padding: 64px;
 }
 
+/* intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+}
 
+.intro > * {
+    flex: 1;
+}
+
+.intro .code {
+    padding-bottom: 16px;
+}
+
+.intro p {
+    width: 50%;
+    padding-top: 16px;
+}
+
+.intro .btn {
+    margin-top: 48px;
+}
+
+/* about */
+.about .data {
+    display: flex;
+}
+
+.about .data p, .about .data ul {
+    padding-top: 16px;
+}
