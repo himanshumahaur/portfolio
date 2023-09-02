@@ -30,10 +30,6 @@ p, li {
 MIXED
 *********************/
 
-.about img {
-    width: 50%;
-}
-
 .verti {
     writing-mode: vertical-lr;
 }
@@ -55,12 +51,6 @@ MIXED
 
     border: 2px solid black;
     border-radius: 50%;
-}
-
-.line {
-    width: 10px;
-    height: 100px;
-    background-color: black;
 }
 
 /*********************
@@ -107,6 +97,13 @@ NAV-BARS
     border: 2px solid black;
 }
 
+.line {
+    width: 6px;
+    height: 100px;
+    background-color: black;
+    border-radius: 6px;
+}
+
 .left-nav {
     left: 0;
 }
@@ -130,27 +127,26 @@ MAIN
 
 .main {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 
-    flex-wrap: wrap;
-    flex-basis: 100%;
-
-    margin: 0 128px;
+    padding: 0px 128px;
 }
 
 .main > div {
-    padding: 64px;
+    padding: 50px;
 }
 
 /* intro */
 .intro {
     display: flex;
     flex-direction: column;
-}
+    flex-wrap: wrap;
 
-.intro > * {
-    flex: 1;
+    box-sizing: border-box;
+    
+    width: 100%;
+    max-width: 1000px;
 }
 
 .intro .code {
@@ -158,7 +154,7 @@ MAIN
 }
 
 .intro p {
-    width: 50%;
+    max-width: 512px;
     padding-top: 16px;
 }
 
@@ -167,10 +163,90 @@ MAIN
 }
 
 /* about */
+.about {
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
 .about .data {
     display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.about .data .para {
+    width: 100%;
+    max-width: 510px;
+}
+
+.about .data .dp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 64px 16px;
+}
+
+.about .data .para .tech-used {
+    display: flex;
+    justify-content: left;
 }
 
 .about .data p, .about .data ul {
     padding-top: 16px;
+}
+
+.about .data ul {
+    padding-left: 16px;
+    margin-right: 16px;
+}
+
+.about .data img {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    border-radius: 6px;
+}
+
+/* education */
+.education {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+/*********************
+media queries
+*********************/
+
+@media (max-width: 1256px) {
+    .intro h1 {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 760px) {
+    .main {
+        padding: 0;
+    }
+
+    .intro h1 {
+        font-size: 7vw;
+    }
+    
+    h2 {
+        font-size: 5vw;
+    }
+
+    .right-nav, .left-nav {
+        display: none;
+    }
+
+    .about .data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .data .para {
+        max-width: 100%;
+    }
 }
