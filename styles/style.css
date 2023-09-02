@@ -10,7 +10,7 @@
 TYPOGRAPHY
 *********************/
 
-h1, h2, p, li {
+h1, h2, h3, p, li {
     font-family: 'Open Sans';
 }
 
@@ -20,6 +20,10 @@ h1 {
 
 h2 {
     font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 p, li {
@@ -80,6 +84,10 @@ NAV-BARS
     margin-left: 20px;
 }
 
+.top-nav .btn {
+    margin-left: 20px;
+}
+
 /* side-navs */
 .left-nav, .right-nav {
     position: fixed;
@@ -94,7 +102,6 @@ NAV-BARS
     width: 128px;
     height: 100%;
 
-    border: 2px solid black;
 }
 
 .line {
@@ -134,7 +141,7 @@ MAIN
 }
 
 .main > div {
-    padding: 50px;
+    padding: 80px 50px;
 }
 
 /* intro */
@@ -209,11 +216,108 @@ MAIN
 }
 
 /* education */
-.education {
+/* .education {
     width: 100%;
-    max-width: 700px;
-    margin: auto;
+    box-sizing: border-box;
+    max-width: 800px;
 }
+
+.education .data {
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 32px;
+
+}
+
+.education .remarks {
+    padding-top: 32px;
+}
+
+.education p {
+    padding-left: 8px;
+} */
+
+/* Projects */
+.projects {
+    box-sizing: border-box;
+    max-width: 1000px;
+}
+
+.projects .pro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 64px;
+}
+
+.projects .docs {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    z-index: 1;
+}
+
+.projects .sshot {
+    width: 150%;
+}
+
+.projects .right .docs {
+    align-items: end;
+    margin-left: -8%;
+    text-align: end;
+}
+
+.projects .left .sshot {
+    margin-left: -8%;
+}
+
+.projects .card {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.projects .pro img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    min-height: 300px;
+}
+
+/* contacts */
+.contact {
+    display: flex;;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    text-align: center;
+    max-width: 600px;
+    align-items: center;
+}
+
+.contact p {
+    padding: 0.5rem;
+}
+
+.contact .btn {
+    margin-top: 2rem;
+}
+
+/* credit */
+#footer {
+    padding: 1rem;
+}
+
+#footer p {
+    font-size: 0.75rem;
+}
+
+
 /*********************
 media queries
 *********************/
@@ -222,6 +326,23 @@ media queries
     .intro h1 {
         font-size: 5vw;
     }
+}
+
+@media (max-width: 1000px) {
+    .left-nav, .right-nav {
+        width: 80px;
+    }
+    .main {
+        padding: 0 80px;
+    }
+    .projects .right .docs {
+        margin-left: -32%;
+    }
+    
+    .projects .left .sshot {
+        margin-left: -32%;
+    }
+
 }
 
 @media (max-width: 760px) {
@@ -249,4 +370,38 @@ media queries
     .about .data .para {
         max-width: 100%;
     }
+
+    /* projects */
+    .projects .pro {
+        position: relative;
+    }
+    .projects .docs {
+        z-index: 5;
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    .projects .card {
+        padding: 0;
+        background: none;
+        border: none;
+    }
+
+    .projects .left .docs, .projects .right .docs {
+        align-items: start;
+        text-align: start;
+
+        position: absolute;
+        margin: 0;
+        padding: 16px;
+
+        z-index: 5;
+    }
+
+    .projects .left .sshot, .projects .right .sshot {
+        margin: 0;
+        padding: 0;
+    }
+    
+
 }
