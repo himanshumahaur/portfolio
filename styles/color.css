@@ -1,0 +1,42 @@
+body {
+    background-color: #FFEFD6;
+}
+
+h1, h2 {
+    color: #150050;
+}
+
+p, li {
+    color: #0E5E6F;
+}
+
+.logo {
+    border-color: #150050;
+}
+
+.btn {
+    color: #FFEFD6;
+    background-color: #150050;
+}
+
+.line {
+    background-color: #150050;
+}
+
+
+
+.options li:hover {
+    color: #0E5E6F;
+    border-bottom: 1px solid #FFEFD6;
+}
+
+.btn:hover {
+    transform: translate(-4px, -4px);
+    color: #E4F9F5;
+    background-color: #11999E;
+}
+
+.projects .card {
+    background-color: #F2DEBA;
+;
+}

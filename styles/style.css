@@ -45,15 +45,18 @@ MIXED
 .btn {
     width: fit-content;
     padding: 12px;
-    border: 2px solid black;
     border-radius: 6px;
 }
 
 .logo {
     width: 50px;
-    height: 50px;
-
+    min-width: 50px;
     border: 2px solid black;
+    border-radius: 50%;
+}
+
+.logo img {
+    width:100%;
     border-radius: 50%;
 }
 
@@ -70,8 +73,6 @@ NAV-BARS
 
     padding: 10px;
     margin: 10px;
-
-    border-bottom: 1px solid black;
 }
 
 .top-nav * {
@@ -277,7 +278,6 @@ MAIN
     padding: 1.5rem;
     margin: 1rem 0;
     background-color: white;
-    border: 2px solid black;
     border-radius: 6px;
 }
 
