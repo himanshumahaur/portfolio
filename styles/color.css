@@ -1,13 +1,13 @@
 body {
-    background-color: #FFEFD6;
+    background-color: #FFE6C7;
 }
 
 h1, h2 {
-    color: #150050;
+    color: #FF6000;
 }
 
 p, li {
-    color: #0E5E6F;
+    color: #454545;
 }
 
 .logo {
@@ -15,12 +15,12 @@ p, li {
 }
 
 .btn {
-    color: #FFEFD6;
-    background-color: #150050;
+    color: #FFE6C7;
+    background-color: #FFA559;
 }
 
 .line {
-    background-color: #150050;
+    background-color: #454545;
 }
 
 
