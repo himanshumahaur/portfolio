@@ -1,26 +1,26 @@
 body {
-    background-color: #FFE6C7;
+    background-color: #EEEEEE;
 }
 
 h1, h2 {
-    color: #FF6000;
+    color: #176B87;
 }
 
 p, li {
-    color: #454545;
+    color: #053B50;
 }
 
 .logo {
-    border-color: #150050;
+    border-color: #64CCC5;
 }
 
 .btn {
-    color: #FFE6C7;
-    background-color: #FFA559;
+    color: #053B50;
+    background-color: #64CCC5;
 }
 
 .line {
-    background-color: #454545;
+    background-color: #0E5E6F;
 }
 
 
@@ -37,6 +37,6 @@ p, li {
 }
 
 .projects .card {
-    background-color: #F2DEBA;
-;
+    background-color: #64CCC5;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
