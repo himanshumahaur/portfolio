@@ -128,7 +128,7 @@ NAV-BARS
 .right-nav {
     right: 0;
 }
-.right-nav .verti {
+.right-nav a {
     padding-bottom: 20px;
 }
 
@@ -264,6 +264,10 @@ MAIN
     z-index: 1;
 }
 
+.projects .docs .link {
+    padding: 6px 0;
+}
+
 .projects .sshot {
     width: 150%;
 }
@@ -272,6 +276,10 @@ MAIN
     align-items: end;
     margin-left: -8%;
     text-align: end;
+}
+
+.projects .left .docs {
+    align-items: baseline;
 }
 
 .projects .left .sshot {
@@ -346,7 +354,7 @@ media queries
     .projects .left .sshot {
         margin-left: -32%;
     }
-
+    
 }
 
 @media (max-width: 760px) {
@@ -398,7 +406,7 @@ media queries
     }
 
     .projects .pro .sshot img {
-        opacity: 0.25;
+        opacity: 0.2;
     }
     
 
