@@ -23,20 +23,31 @@ p, li {
     background-color: #0E5E6F;
 }
 
+/* card color before collapse */
+.projects .card {
+    background-color: #64CCC5;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
 
+.projects .sshot {
+    border-radius: 6px;
+}
 
-.options li:hover {
+/* hower stuff */
+/* .options li:hover {
+    transform: translate(0, -2px);
     color: #0E5E6F;
     border-bottom: 1px solid #FFEFD6;
 }
 
 .btn:hover {
-    transform: translate(-4px, -4px);
+    transform: translate(0, -4px);
     color: #E4F9F5;
     background-color: #11999E;
+} */
+a {
+    transition: transform 250ms;
 }
-
-.projects .card {
-    background-color: #64CCC5;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+a:hover {
+    transform: translate(0, -4px);
 }

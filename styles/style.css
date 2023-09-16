@@ -30,6 +30,10 @@ p, li {
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*********************
 MIXED
 *********************/
@@ -51,8 +55,6 @@ MIXED
 .logo {
     width: 50px;
     min-width: 50px;
-    border: 2px solid black;
-    border-radius: 50%;
 }
 
 .logo img {
@@ -73,6 +75,9 @@ NAV-BARS
 
     padding: 10px;
     margin: 10px;
+
+    position: relative;
+    z-index: 1;
 }
 
 .top-nav * {
@@ -102,7 +107,6 @@ NAV-BARS
 
     width: 128px;
     height: 100%;
-
 }
 
 .line {
@@ -166,7 +170,7 @@ MAIN
     padding-top: 16px;
 }
 
-.intro .btn {
+.intro a {
     margin-top: 48px;
 }
 
@@ -304,7 +308,7 @@ MAIN
     padding: 0.5rem;
 }
 
-.contact .btn {
+.contact a {
     margin-top: 2rem;
 }
 
@@ -381,11 +385,22 @@ media queries
         margin-bottom: 16px;
     }
 
-    .projects .card {
+    .projects .pro .card {
         padding: 0;
+        box-shadow: none;
+
         background: none;
         border: none;
     }
+
+    .projects .pro .sshot {
+        background-color: #64CCC5;;
+    }
+
+    .projects .pro .sshot img {
+        opacity: 0.25;
+    }
+    
 
     .projects .left .docs, .projects .right .docs {
         align-items: start;
@@ -402,6 +417,4 @@ media queries
         margin: 0;
         padding: 0;
     }
-    
-
 }
